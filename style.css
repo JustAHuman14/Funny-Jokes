@@ -1,50 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#generate{
+#generate {
     border: none;
     border-radius: 10px;
     color: white;
     width: 140px;
     height: 50px;
     background-color: rgb(37, 37, 192);
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
 
-body{
-    background-color:rgb(236, 236, 139);
+body {
+    background-color: rgb(236, 236, 139);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
 
-.box{
+.box {
     font-size: 18px;
-    display:flex;
+    display: flex;
     align-items: center;
-    background-color: white; 
+    background-color: white;
     border-radius: 15px;
     border: 2px solid;
     width: 460px;
     height: 170px;
 }
 
-#jokes{
+#jokes {
     margin: auto;
 }
 
-.btn{
+.btn {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .box {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 2px solid;
+        width: 350px;
+        font-size: 15px;
+    }
+
+    #jokes {
+        margin: auto;
+    }
 }
